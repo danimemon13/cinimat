@@ -1,0 +1,73 @@
+:root{
+    --red: #fd0100;
+    --black: #000;
+    --white: #fff;
+    --grey:#707070;
+}
+/*global*/
+ul,p{ margin: 0; padding: 0; }
+a{ text-decoration: none !important; }
+body{ font-family: 'Mont'; line-height: 1.8;background: #000; }
+.red_btn {background: #fd0100;color: var(--white); padding: 12px 30px;text-transform: uppercase;font-weight: 600;font-size: 16px;transition: .3s;}
+.red_btn:hover { color: var(--white); background: #bf0605; }
+.container { max-width: 95%; }
+/*header*/
+header{ position: absolute; width: 100%; z-index: 2; padding: 20px 0 0; }
+/*login page*/
+.cin_login { width: 100%; height: 100vh; background: #0000007a url(../../assets/images/dashboard/login_bg.jpg) no-repeat center; background-size: cover; display: flex; align-content: center; align-items: center; justify-content: center; background-blend-mode: color; }
+.cin_login_form { background: rgba(0, 0, 0, .75); padding: 68px; border-radius: 5px; color: var(--white); max-width: 450px; margin: 0 auto; }
+.cin_login_form h3 { margin: 0 0 20px; font-size: 32px; font-weight: bold; }
+.cin_login_form .form-control { background: #333; border: none; padding: 15px; color: var(--white); font-size: 14px; resize: none; }
+.cin_login_form .form-control::placeholder { color: #999; }
+/*register page*/
+.cin_register_form{ max-width: 750px; }
+.
+/*dasbhoard page*/
+/*header*/
+.cin_dash_header { padding: 10px 0; background: #111; position: fixed; width: 100%; z-index: 1; }
+.cin_dash_header form .form-control {background: #333;}
+.cin_dash_head_right {display: flex; justify-content: flex-end; }
+.cin_dash_head_right .red_btn { padding: 5px 20px; font-size: 14px; }
+#navbarDarkDropdownMenuLink { font-size: 14px; }
+#navbarDarkDropdownMenuLink img { border-radius: 50px; margin: 0 10px 0 0; }
+.cin_dash_head_right .dropdown-menu{ background: #111; }
+.cin_dash_head_right .dropdown-menu li a{ color: #666; font-size: 14px; }
+button.cin_bar_btn { width: 40px; border: none; height: 40px; margin: 0 0 0 20px; background: var(--red); color: #fff; font-size: 18px; border-radius: 3px; }
+button.cin_bar_btn i { transition: .3s; transform: rotate(180deg ); }
+/*sidebar*/
+.cin_dash_sidebar {width: 250px;height: 100%;position: fixed;background: #111;margin: 73px 0 0 0;transition: linear .3s;}
+.cin_dash_sidebar ul li a {padding: 11px;display: block;color: #666;transition: linear .3s;border-left: 5px solid #111;position: relative;}
+.cin_dash_sidebar ul li a:hover { color: var(--white); border-color: var(--red); }
+.cin_dash_sidebar ul li a i { margin: 0 10px 0 0; display: inline-block; padding: 10px; background: #000; border-radius: 50px; font-size: 18px; transition: linear .3s; }
+.cin_dash_sidebar ul li a:hover i { background: #fd0100; color: var(--white); }
+.cin_dash_sidebar ul li a span{transition: ease .3s;opacity: 1;position: absolute;top: 18px;}
+.cin_dash_sidebar_minimize {width: 70px; }
+.cin_dash_sidebar_minimize ul li a span { opacity: 0; position: absolute;}
+
+/*main area*/
+.cin_dash_mainarea {padding: 95px 20px 20px 270px;transition: linear .3s;}
+.cin_dash_recent { background: #111; padding: 20px; }
+.cin_dash_recent h3 {font-size: 20px;font-weight: bold;margin: 0 0 10px;padding: 0 0 10px;color: #666;border-bottom: 1px solid #fd01007d;}
+.cin_dash_recent h5 { color: #666; font-size: 18px; margin: 10px 0 0; transition: .3s; }
+.cin_dash_recent_box{ margin: 10px; }
+.cin_dash_recent_box:hover h5{ color: #fff; }
+.cin_dash_recent .owl-controls { position: absolute; top: 70px; width: 100%; }
+.cin_dash_recent .owl-prev {position: absolute;left: -10px;}
+.cin_dash_recent .owl-next { right: 0; position: absolute; right: -10px; }
+.cin_dash_recent .owl-prev:hover i,.cin_dash_recent .owl-next:hover i{ color:var(--red); }
+.cin_dash_recent .owl-controls i { color: #333; font-size: 18px; }
+.cin_dash_mainarea_active {padding: 95px 20px 20px 90px; }
+/*stats*/
+.cin_dash_stats ul { display: flex; }
+.cin_dash_stats ul li { color: #666; padding: 5px 0; font-size: 14px; border: none; border-bottom: 1px solid #222; }
+.cin_dash_stats ul li span {display: inline-block;font-size: 14px;font-weight: 600;float: right;margin: 1px 0 0;background: #333;}
+
+/*score*/
+.cin_dash_score { display: flex; justify-content: center; }
+.cin_dash_score h4 { width: 200px; height: 200px; color: #666; text-align: center; border: 1px solid #000; border-radius: 120px; display: flex; flex-direction: column; align-items: center; justify-content: center; line-height: 40px; }
+.cin_dash_score h4 span { display: block; font-size: 52px; font-weight: bold; color: #666; }
+
+/*add movie page*/
+.cin_add_movie .form-control { background: #222; border: 1px solid #333; resize: none; color: #fff; padding: 15px; border-radius: 0; }
+.cin_add_movie label { color: #666; }
+.cin_add_movie button.red_btn{ border: none; }
